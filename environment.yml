@@ -1,0 +1,19 @@
+name: audio
+channels:
+  - pytorch
+  - defaults
+  - conda-forge
+  - nvidia
+dependencies:
+  - python>=3.10
+  - pytorch>=2.4.0
+  - pytorch-cuda>=12.4
+  - torchaudio
+  - tqdm
+  - pandas
+  - matplotlib
+  - pip
+  - pip:
+    - panns-inference
+    - sounddevice
+    - librosa
