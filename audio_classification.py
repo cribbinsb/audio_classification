@@ -71,7 +71,9 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Classify audio using PANNs in real-time (microphone) or from a WAV file.")
     parser.add_argument("--mic", action="store_true", help="Use microphone for real-time classification")
     parser.add_argument("--wav", type=str, help="Path to WAV file for classification")
-    
+    print("labels\n\n")
+    print(labels)
+    print("\n\n")
     args = parser.parse_args()
     
     if args.mic:
